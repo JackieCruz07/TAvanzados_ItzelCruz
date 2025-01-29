@@ -1,10 +1,11 @@
-import { Ejemplo01 } from './components/Ejemplos/Ejemplo01';
+/* eslint-disable no-unused-vars */
+import { Ejemplo01, Ejemplo02 } from './components/Ejemplos';
 
 function App() {
   return (
     <div>
-      <h1>Hola</h1>
        <Ejemplo01/>
+       
     </div>
   );
 }
