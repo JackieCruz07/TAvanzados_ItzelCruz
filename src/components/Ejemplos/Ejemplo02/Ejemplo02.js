@@ -8,8 +8,8 @@ export function Ejemplo02(props) {
     <div style={fondo.tema}>
         <h1>Valor: {contador}</h1>
         <div className='target__button'>
-            <Button variant="success" onClick={incrementar} >incrementarValor</Button>
-            <Button variant="danger" onClick={decrementar} >decrementarValor</Button>
+            <Button variant="success" onClick={incrementar} >Incrementar</Button>
+            <Button variant="danger" onClick={decrementar} >Decrementar</Button>
         </div>
     </div>
   )
