@@ -1,11 +1,13 @@
-/* eslint-disable no-unused-vars */
 //import { Ejemplo01, Ejemplo02 } from './components/Ejemplos';
-import {HomeProductos} from './components/productos'
+import { BrowserRouter as Router } from "react-router-dom";
+import { HomeProductos } from "./components/productos";
 function App() {
   return (
-    <div>
-    <HomeProductos/>
-    </div>
+    <Router>
+      <div>
+        <HomeProductos />
+      </div>
+    </Router>
   );
 }
 

@@ -8,8 +8,8 @@ console.log(Datos);
 
   const fondo={
     tema:{
-      backgroundColor:'black',
-      color:"white",
+      backgroundColor:'floralwhite',
+      color:"palevioletred",
       fontSize:'20px'
     }
   }
@@ -21,13 +21,7 @@ console.log(Datos);
     className="mb-3"
   >
     <Tab eventKey="home" title="Lista de Productos">
-      {
-        Datos.map((producto)=>(
-          <ItemProductos/>
-        )
-        )
-      }
-      
+      <ItemProductos datos={Datos}/>
     </Tab>
   </Tabs>
   </div>
