@@ -1,13 +1,12 @@
-//import { Ejemplo01, Ejemplo02 } from './components/Ejemplos';
-import { BrowserRouter as Router } from "react-router-dom";
-import { HomeProductos } from "./components/productos";
+//import {Ejemplo01} from './components/ejemplos'
+import { BrowserRouter } from "react-router-dom";
+import { Rutas } from "./routes";
+
 function App() {
   return (
-    <Router>
-      <div>
-        <HomeProductos />
-      </div>
-    </Router>
+    <BrowserRouter>
+      <Rutas/>
+    </BrowserRouter>
   );
 }
 

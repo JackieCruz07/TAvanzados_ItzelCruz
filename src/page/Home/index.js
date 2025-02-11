@@ -1,2 +1,1 @@
-/* export * from './home';
-export * from '../Footer'; */
+export * from "./Home";

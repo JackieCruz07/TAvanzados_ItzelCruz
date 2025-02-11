@@ -1,10 +1,12 @@
 import React from "react";
-import { Tabs, Tab } from "react-bootstrap";
+import { Tabs, Tab, Row, Col } from "react-bootstrap";
 import { ItemProductos } from "../ItemProductos";
 import { Datos } from "../../../utils/bd";
 
+import "./HomeProducto.scss";
+
 export function HomeProductos() {
-  console.log(Datos);
+  //console.log(Datos);
 
   const fondo = {
     tema: {
@@ -21,13 +23,17 @@ export function HomeProductos() {
         className="mb-3"
       >
         <Tab eventKey="home" title="Lista de Productos">
-          <ItemProductos datos={Datos} />
+          <Row xs={1} sm={2} md={3} lg={4}>
+            {Datos.map((producto, index) => (
+              <Col key={index}>
+                <div className="p-2">
+                  <ItemProductos producto={producto}/>
+                </div>
+              </Col>
+            ))}
+          </Row>
         </Tab>
       </Tabs>
-
-      {/* <div eventKey="home" title="Lista de Productos">
-        <ItemProductos datos={Datos} />
-      </div> */}
     </div>
   );
 }
